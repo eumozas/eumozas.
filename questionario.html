@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diagnóstico de Instagram</title>
+<meta name="description" content="Questionário rápido sobre as redes sociais da sua empresa — respostas enviadas direto no Direct do Moises Silva.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f3ee; --surface:#ffffff; --ink:#15130f; --muted:#6a6357; --line:#e2dcd2;
+  --accent:#c9853a; --accent-ink:#fff; --soft:#f3e7d8; --font:"Urbanist",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#100f0d; --surface:#1a1815; --ink:#f2ede4; --muted:#a69e90; --line:#2e2a24;
+    --accent:#e09a4c; --accent-ink:#14110c; --soft:#2a2118;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#100f0d; --surface:#1a1815; --ink:#f2ede4; --muted:#a69e90; --line:#2e2a24;
+  --accent:#e09a4c; --accent-ink:#14110c; --soft:#2a2118;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);font-size:18px;line-height:1.5;min-height:100svh;display:flex;flex-direction:column;-webkit-font-smoothing:antialiased}
+.top{display:flex;align-items:center;justify-content:space-between;padding:20px 16px;width:min(720px,100%);margin:0 auto}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+.brand img{width:42px;height:42px;border-radius:50%;object-fit:cover;filter:grayscale(1)}
+.brand b{display:block;font-weight:600;letter-spacing:-.02em;line-height:1.1}
+.brand small{color:var(--muted);font-size:13px}
+.count{font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+.bar{height:4px;background:var(--line);width:min(720px,100% - 32px);margin:0 auto;border-radius:4px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--accent);transition:width .4s ease}
+main{flex:1;width:min(720px,100%);margin:0 auto;padding:40px 16px 120px}
+.q{animation:in .45s ease}
+@keyframes in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.eyebrow{font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--accent)}
+h1{font-size:clamp(36px,7vw,60px);font-weight:500;letter-spacing:-.04em;line-height:1.02;margin:14px 0 18px}
+h1 em{font-style:normal;color:var(--accent)}
+h2{font-size:clamp(28px,5vw,40px);font-weight:500;letter-spacing:-.035em;line-height:1.08;margin:12px 0 8px}
+.hint{color:var(--muted);font-size:16px;margin-bottom:28px}
+.lead{color:var(--muted);max-width:52ch;margin-bottom:32px}
+.opts{display:grid;gap:10px}
+.opt{display:flex;align-items:center;gap:14px;width:100%;text-align:left;font:inherit;font-size:17px;font-weight:500;color:var(--ink);background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:16px 18px;cursor:pointer;transition:border-color .15s,background .15s,transform .15s}
+.opt:hover{border-color:var(--accent)}
+.opt:active{transform:scale(.99)}
+.opt .k{flex:none;width:28px;height:28px;border-radius:8px;border:1.5px solid var(--line);display:grid;place-items:center;font-size:13px;font-weight:700;color:var(--muted)}
+.opt.on{border-color:var(--accent);background:var(--soft)}
+.opt.on .k{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+input[type=text],textarea{width:100%;font:inherit;font-size:20px;color:var(--ink);background:transparent;border:0;border-bottom:2px solid var(--line);padding:12px 2px;outline:none;transition:border-color .2s}
+input[type=text]:focus,textarea:focus{border-color:var(--accent)}
+textarea{resize:vertical;min-height:90px;font-size:18px}
+input::placeholder,textarea::placeholder{color:var(--muted);opacity:.6}
+.nav{display:flex;gap:10px;align-items:center;margin-top:32px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:inherit;font-weight:600;font-size:16px;border:0;border-radius:999px;padding:15px 26px;cursor:pointer;text-decoration:none;transition:transform .15s,opacity .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn:disabled{opacity:.35;cursor:not-allowed;transform:none}
+.primary{background:var(--accent);color:var(--accent-ink)}
+.ghost{background:transparent;color:var(--muted);padding:15px 14px}
+.ig{background:linear-gradient(45deg,#f58529,#dd2a7b 50%,#8134af);color:#fff}
+.wa{background:#25d366;color:#fff}
+.btn svg{width:20px;height:20px;fill:currentColor}
+.tip{font-size:14px;color:var(--muted);margin-left:4px}
+.err{color:#d0473a;font-size:14px;margin-top:10px;min-height:20px}
+.summary{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px;margin:24px 0;font-size:15px;white-space:pre-wrap;max-height:300px;overflow:auto;color:var(--muted)}
+.send{display:grid;gap:10px}
+.send .btn{width:100%;padding:18px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);opacity:0;visibility:hidden;transition:transform .35s,opacity .35s,visibility .35s;background:var(--ink);color:var(--bg);padding:14px 20px;border-radius:12px;font-size:15px;font-weight:500;transition:transform .35s;max-width:calc(100% - 32px);text-align:center;z-index:9}
+.toast.show{transform:translate(-50%,0);opacity:1;visibility:visible}
+.meta{display:flex;gap:18px;flex-wrap:wrap;color:var(--muted);font-size:14px;margin-top:22px}
+</style>
+<script data-goatcounter="https://moisesbsilvaa.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html#">
+    <img src="moises.jpg" alt="Moises Silva">
+    <span><b>Moises Silva</b><small>Diagnóstico de redes sociais</small></span>
+  </a>
+  <span class="count" id="count"></span>
+</header>
+<div class="bar"><i id="bar"></i></div>
+<main id="app"></main>
+<div class="toast" id="toast"></div>
+
+<script>
+const IG_USER = "moisesbsilvaa";
+const WA_NUMBER = "5515991623411";
+
+const Q = [
+  {id:"nome", t:"text", q:"Qual é o seu nome?", ph:"Seu nome", req:true},
+  {id:"empresa", t:"text", q:"Qual o nome da sua empresa?", ph:"Nome da empresa", req:true},
+  {id:"segmento", t:"text", q:"Qual é o segmento do seu negócio?", hint:"Ex.: clínica de estética, restaurante, advocacia, loja de roupas…", ph:"Segmento", req:true},
+  {id:"arroba", t:"text", q:"Qual o @ do Instagram da empresa?", hint:"Se ainda não tiver, escreva “não tenho”.", ph:"@suaempresa", req:true},
+  {id:"redes", t:"multi", q:"Em quais redes sua empresa está hoje?", hint:"Pode marcar mais de uma.", o:["Instagram","Facebook","TikTok","LinkedIn","YouTube","WhatsApp Business","Nenhuma ainda"]},
+  {id:"seguidores", t:"one", q:"Quantos seguidores a empresa tem no Instagram?", o:["Menos de 1 mil","De 1 mil a 5 mil","De 5 mil a 20 mil","Mais de 20 mil"]},
+  {id:"frequencia", t:"one", q:"Com que frequência vocês postam?", o:["Quase nunca","1 vez por semana","2 a 4 vezes por semana","Todos os dias"]},
+  {id:"responsavel", t:"one", q:"Quem cuida das redes sociais hoje?", o:["Ninguém","Eu mesmo(a)","Um funcionário","Agência ou freelancer"]},
+  {id:"dificuldades", t:"multi", q:"Quais são as maiores dificuldades?", hint:"Pode marcar mais de uma.", o:["Falta de tempo","Não sei o que postar","Fotos e vídeos sem qualidade","Perfil desorganizado","Pouco engajamento","As redes não trazem vendas"]},
+  {id:"identidade", t:"one", q:"A empresa tem identidade visual definida?", hint:"Logo, cores e padrão de posts.", o:["Sim, tudo definido","Só tenho a logo","Não tenho nada definido"]},
+  {id:"objetivo", t:"one", q:"Qual é o principal objetivo com as redes?", o:["Vender mais","Ser referência / autoridade","Atrair clientes da minha região","Lançar um produto ou serviço"]},
+  {id:"investimento", t:"one", q:"Quanto pretende investir por mês nas redes?", o:["Até R$ 500","R$ 500 a R$ 1.500","R$ 1.500 a R$ 3.000","Acima de R$ 3.000","Prefiro conversar"]},
+  {id:"obs", t:"area", q:"Quer contar mais alguma coisa?", hint:"Opcional.", ph:"Escreva aqui…", req:false},
+];
+
+const A = {};
+let i = -1;
+const app = document.getElementById("app");
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function progress(){
+  const n = Math.max(0, Math.min(i, Q.length));
+  document.getElementById("bar").style.width = (n / Q.length * 100) + "%";
+  document.getElementById("count").textContent = (i >= 0 && i < Q.length) ? `${i+1} / ${Q.length}` : "";
+}
+
+function intro(){
+  app.innerHTML = `<div class="q">
+    <span class="eyebrow">Diagnóstico gratuito</span>
+    <h1>Como estão as <em>redes</em> da sua empresa?</h1>
+    <p class="lead">Responda ${Q.length} perguntas rápidas. No final, suas respostas vão direto para o meu Direct no Instagram e eu te retorno com um diagnóstico do seu perfil.</p>
+    <button class="btn primary" id="go">Começar agora →</button>
+    <div class="meta"><span>⏱ Leva cerca de 2 minutos</span><span>✓ Sem compromisso</span></div>
+  </div>`;
+  document.getElementById("go").onclick = () => { i = 0; render(); };
+  progress();
+}
+
+function valid(q){
+  const v = A[q.id];
+  if (q.t === "multi") return Array.isArray(v) && v.length > 0;
+  if (q.t === "one") return !!v;
+  return q.req ? !!(v && v.trim()) : true;
+}
+
+function render(){
+  if (i >= Q.length) return done();
+  const q = Q[i];
+  progress();
+  let body = "";
+  if (q.t === "one" || q.t === "multi"){
+    const cur = A[q.id] || (q.t === "multi" ? [] : "");
+    body = `<div class="opts">${q.o.map((o,k) => {
+      const on = q.t === "multi" ? cur.includes(o) : cur === o;
+      return `<button class="opt${on?" on":""}" data-v="${esc(o)}"><span class="k">${String.fromCharCode(65+k)}</span>${esc(o)}</button>`;
+    }).join("")}</div>`;
+  } else if (q.t === "area"){
+    body = `<textarea id="inp" placeholder="${esc(q.ph||"")}">${esc(A[q.id]||"")}</textarea>`;
+  } else {
+    body = `<input type="text" id="inp" placeholder="${esc(q.ph||"")}" value="${esc(A[q.id]||"")}" autocomplete="off">`;
+  }
+  const last = i === Q.length - 1;
+  app.innerHTML = `<div class="q">
+    <span class="eyebrow">Pergunta ${i+1}</span>
+    <h2>${esc(q.q)}</h2>
+    <p class="hint">${esc(q.hint||" ")}</p>
+    ${body}
+    <div class="err" id="err"></div>
+    <div class="nav">
+      <button class="btn primary" id="next" ${valid(q)?"":"disabled"}>${last ? "Finalizar" : "Continuar"} →</button>
+      ${i > 0 ? `<button class="btn ghost" id="back">← Voltar</button>` : ""}
+      ${q.t==="text" ? `<span class="tip">ou aperte Enter ↵</span>` : ""}
+    </div>
+  </div>`;
+
+  const next = document.getElementById("next");
+  const go = () => { if (!valid(q)) { document.getElementById("err").textContent = "Responda para continuar."; return; } i++; render(); };
+  next.onclick = go;
+  const back = document.getElementById("back");
+  if (back) back.onclick = () => { i--; render(); };
+
+  app.querySelectorAll(".opt").forEach(b => b.onclick = () => {
+    const v = b.dataset.v;
+    if (q.t === "one"){
+      A[q.id] = v;
+      app.querySelectorAll(".opt").forEach(x => x.classList.toggle("on", x === b));
+      next.disabled = false;
+      setTimeout(go, 260);
+    } else {
+      let arr = A[q.id] || [];
+      arr = arr.includes(v) ? arr.filter(x => x !== v) : [...arr, v];
+      A[q.id] = arr;
+      b.classList.toggle("on");
+      next.disabled = !valid(q);
+    }
+  });
+
+  const inp = document.getElementById("inp");
+  if (inp){
+    inp.focus();
+    inp.oninput = () => { A[q.id] = inp.value; next.disabled = !valid(q); };
+    if (q.t === "text") inp.onkeydown = e => { if (e.key === "Enter") go(); };
+  }
+}
+
+function message(){
+  const L = ["Olá, Moises! Respondi o diagnóstico de redes sociais 👇", ""];
+  Q.forEach(q => {
+    let v = A[q.id];
+    if (Array.isArray(v)) v = v.join(", ");
+    if (!v || !String(v).trim()) return;
+    L.push(`▪️ ${q.q}`, `${String(v).trim()}`, "");
+  });
+  return L.join("\n").trim();
+}
+
+async function copy(text){
+  try { await navigator.clipboard.writeText(text); return true; } catch(e) {}
+  try {
+    const t = document.createElement("textarea");
+    t.value = text; t.style.position = "fixed"; t.style.opacity = "0";
+    document.body.appendChild(t); t.select();
+    const ok = document.execCommand("copy"); t.remove(); return ok;
+  } catch(e) { return false; }
+}
+
+function toast(msg){
+  const t = document.getElementById("toast");
+  t.textContent = msg; t.classList.add("show");
+  clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove("show"), 4200);
+}
+
+function done(){
+  i = Q.length; progress();
+  const msg = message();
+  const nome = (A.nome||"").trim().split(" ")[0];
+  app.innerHTML = `<div class="q">
+    <span class="eyebrow">Pronto${nome ? ", " + esc(nome) : ""}!</span>
+    <h2>Agora é só me enviar no <span style="color:var(--accent)">Direct</span>.</h2>
+    <p class="hint">Ao tocar no botão, suas respostas são copiadas e o meu Direct abre. Lá, é só <b>colar</b> na conversa e enviar.</p>
+    <div class="summary" id="sum">${esc(msg)}</div>
+    <div class="send">
+      <a class="btn ig" id="ig" href="https://ig.me/m/${IG_USER}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2Zm0 4.7a5.1 5.1 0 1 0 0 10.2 5.1 5.1 0 0 0 0-10.2Zm0 8.4a3.3 3.3 0 1 1 0-6.6 3.3 3.3 0 0 1 0 6.6Zm5.3-9.8a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4Z"/></svg>
+        Copiar e abrir meu Direct
+      </a>
+      <a class="btn wa" id="wa" target="_blank" rel="noopener" href="https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.8-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg>
+        Prefiro enviar pelo WhatsApp
+      </a>
+    </div>
+    <div class="nav"><button class="btn ghost" id="back">← Revisar respostas</button></div>
+  </div>`;
+  document.getElementById("ig").addEventListener("click", () => {
+    let ok = false;
+    try { const t = document.createElement("textarea"); t.value = msg; t.style.cssText = "position:fixed;top:0;opacity:0"; document.body.appendChild(t); t.select(); ok = document.execCommand("copy"); t.remove(); } catch(e) {}
+    try { navigator.clipboard && navigator.clipboard.writeText(msg).catch(() => {}); ok = ok || !!navigator.clipboard; } catch(e) {}
+    toast(ok ? "Respostas copiadas! Cole no Direct e envie 💬" : "Copie o texto do resumo e cole no Direct.");
+  });
+  document.getElementById("back").onclick = () => { i = Q.length - 1; render(); };
+}
+
+intro();
+</script>
+</body>
+</html>
