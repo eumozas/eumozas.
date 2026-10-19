@@ -506,6 +506,23 @@ header.hero .eyebrow{background:none;-webkit-text-fill-color:#8fd3b5;color:#8fd3
 .hero::after{background:linear-gradient(180deg,rgba(18,18,20,0) 60%,rgba(18,18,20,.9) 100%)}
 .hero .bg::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:64px 64px;-webkit-mask-image:radial-gradient(ellipse at 50% 40%,#000 30%,transparent 75%);mask-image:radial-gradient(ellipse at 50% 40%,#000 30%,transparent 75%)}
 .slide .ht{text-shadow:none}
+
+/* pop-up de oferta */
+.pop{position:fixed;inset:0;z-index:120;display:grid;place-items:center;padding:16px;background:rgba(8,8,10,.6);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
+.pop.open{opacity:1;visibility:visible}
+.pop-box{position:relative;width:min(460px,100%);padding:38px 32px 30px;border-radius:24px;text-align:center;border:1px solid transparent;background:radial-gradient(500px 260px at 50% 0%,rgba(99,102,241,.25),transparent 70%) padding-box,linear-gradient(#1a1a1d,#1a1a1d) padding-box,var(--grad) border-box;box-shadow:0 40px 90px -30px rgba(0,0,0,.8);transform:translateY(24px) scale(.96);transition:transform .45s cubic-bezier(.2,.9,.3,1.2)}
+.pop.open .pop-box{transform:none}
+.pop-x{all:unset;cursor:pointer;position:absolute;right:14px;top:12px;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;color:#aaa;font-size:22px}
+.pop-x:hover{background:rgba(255,255,255,.08);color:#fff}
+.pop-tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;padding:7px 14px;border-radius:999px;background:var(--grad);color:#fff}
+.pop h3{font-size:clamp(28px,6vw,36px);font-weight:600;letter-spacing:-.03em;line-height:1.08;margin:18px 0 10px;color:#fff}
+.pop h3 em{font-style:normal}
+.pop p{color:#a9a9b0;font-size:16px;line-height:1.5}
+.pop .price-tag{margin:18px 0 22px;font-size:22px;font-weight:700;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.pop-btns{display:grid;gap:10px}
+.pop-btns .btn{justify-content:center;width:100%}
+.pop-btns .btn-ghost{border-color:#3a3a40;color:#fff}
+.pop small{display:block;margin-top:14px;color:#77777e;font-size:13px}
 </style>
 <script data-goatcounter="https://moisesbsilvaa.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
@@ -885,6 +902,20 @@ header.hero .eyebrow{background:none;-webkit-text-fill-color:#8fd3b5;color:#8fd3
   </div>
   <div class="dg-main" id="dgApp"></div>
 </div>
+<div class="pop" id="pop" role="dialog" aria-modal="true" aria-labelledby="popT">
+  <div class="pop-box">
+    <button class="pop-x" id="popX" aria-label="Fechar">×</button>
+    <span class="pop-tag">Sites profissionais</span>
+    <h3 id="popT">Faça sua <em>página profissional</em> agora!</h3>
+    <p>Site sob medida, perfeito no celular, com WhatsApp e a sua identidade visual. Eu cuido de tudo, do texto ao ar.</p>
+    <div class="price-tag">Consulte valores</div>
+    <div class="pop-btns">
+      <a class="btn btn-accent" href="https://wa.me/5515992565006?text=Ol%C3%A1%20Moises!%20Quero%20um%20or%C3%A7amento%20da%20minha%20p%C3%A1gina%20profissional." target="_blank" rel="noopener">Pedir orçamento no WhatsApp</a>
+      <a class="btn btn-ghost" href="https://ig.me/m/moisesbsilvaa" target="_blank" rel="noopener">Chame no Direct</a>
+    </div>
+    <small>Resposta pessoal · sem compromisso</small>
+  </div>
+</div>
 <div class="toast" id="toast"></div>
 
 <script>
@@ -893,6 +924,28 @@ const $ = s => document.querySelector(s), $$ = s => document.querySelectorAll(s)
 const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const fine = matchMedia('(hover:hover) and (pointer:fine)').matches;
 $('#y').textContent = new Date().getFullYear();
+
+/* pop-up de oferta: aparece 1 vez por visita, após 8s ou ao rolar 40% */
+(() => {
+  const pop = $('#pop'); if (!pop) return;
+  let seen = false; try { seen = sessionStorage.getItem('popVisto') === '1'; } catch(e) {}
+  if (seen) return;
+  const open = () => {
+    if (seen) return;
+    if ($('#dg') && $('#dg').classList.contains('open')) return;
+    if ($('#modal') && $('#modal').classList.contains('open')) return;
+    seen = true; try { sessionStorage.setItem('popVisto','1'); } catch(e) {}
+    pop.classList.add('open'); removeEventListener('scroll', onSc);
+  };
+  const close = () => pop.classList.remove('open');
+  const onSc = () => { const h = document.documentElement.scrollHeight - innerHeight; if (h > 0 && scrollY / h > .4) open(); };
+  setTimeout(open, 8000);
+  addEventListener('scroll', onSc, {passive:true});
+  $('#popX').addEventListener('click', close);
+  pop.addEventListener('click', e => { if (e.target === pop) close(); });
+  addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+  pop.querySelectorAll('.pop-btns a').forEach(a => a.addEventListener('click', close));
+})();
 
 /* hero rolável */
 (() => {
