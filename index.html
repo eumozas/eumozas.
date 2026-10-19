@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Moises Silva Fotografia</title>
-<meta name="description" content="Moises Silva — fotógrafo, editor e estrategista de Instagram. Organizo e posiciono seu perfil para transformá-lo em uma vitrine profissional.">
+<title>Moises Silva · Sites Profissionais</title>
+<meta name="description" content="Moises Silva cria sites e páginas profissionais para negócios e profissionais que querem ser encontrados, passar confiança e vender mais. Peça o seu.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400&family=Urbanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -82,7 +82,7 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:7
 .hero .glow{position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(99,140,214,.28),transparent 65%);left:0;top:0;transform:translate(-50%,-50%);pointer-events:none;z-index:1;mix-blend-mode:screen;opacity:0;transition:opacity .4s}
 .hero:hover .glow{opacity:1}
 .hero .wrap{position:relative;z-index:2;padding-top:110px;padding-bottom:clamp(48px,9vh,96px)}
-.hero h1{font-size:clamp(48px,min(9vw,13vh),124px);max-width:12ch;margin:18px 0 22px}
+.hero h1{font-size:clamp(46px,min(8vw,11.5vh),112px);max-width:15ch;margin:18px 0 22px}
 .hero h1 .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
 .hero h1 .w > span{display:inline-block;transform:translateY(105%);animation:up .9s cubic-bezier(.2,.8,.2,1) forwards}
 .hero h1 em{color:var(--gold)}
@@ -447,6 +447,22 @@ h2{background:var(--silver);-webkit-background-clip:text;background-clip:text;co
 .track span::after{color:var(--g2)}
 .seg2,.visits b{color:var(--g1)}
 header.hero .eyebrow{background:none;-webkit-text-fill-color:#8fd3b5;color:#8fd3b5;text-shadow:0 2px 12px rgba(0,0,0,.5)}
+
+/* seção de venda */
+.sell{background:var(--bg)}
+.feat{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.ft{padding:26px 24px;border:1px solid var(--line);border-radius:18px;background:var(--surface);transition:border-color .3s,transform .3s}
+.ft:hover{border-color:var(--g3);transform:translateY(-4px)}
+.ft i{font-style:normal;display:block;font-weight:700;font-size:14px;letter-spacing:.1em;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;width:max-content}
+.ft b{display:block;font-size:20px;font-weight:600;margin:14px 0 8px;letter-spacing:-.02em}
+.ft span{display:block;font-size:15px;line-height:1.5;color:var(--muted)}
+.price{margin-top:28px;display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap;padding:34px 36px;border-radius:22px;border:1px solid transparent;background:linear-gradient(var(--surface),var(--surface)) padding-box,var(--grad) border-box}
+.price b{display:block;font-size:clamp(32px,4vw,46px);font-weight:600;letter-spacing:-.03em;margin:8px 0 6px}
+.price p{color:var(--muted);max-width:46ch}
+.pbtn{display:flex;gap:12px;flex-wrap:wrap}
+.price .btn-ghost{border-color:var(--line);color:var(--ink)}
+@media (max-width:960px){.feat{grid-template-columns:1fr 1fr}}
+@media (max-width:540px){.feat{grid-template-columns:1fr}}
 </style>
 <script data-goatcounter="https://moisesbsilvaa.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
@@ -458,6 +474,7 @@ header.hero .eyebrow{background:none;-webkit-text-fill-color:#8fd3b5;color:#8fd3
   <div class="wrap">
     <a href="#" class="logo">Moises <span>Silva</span></a>
     <div class="links">
+      <a href="#site">Seu site</a>
       <a href="#sobre">Sobre</a>
       <a href="#antes-depois">Antes × Depois</a>
       <a href="#servicos">Serviços</a>
@@ -473,15 +490,15 @@ header.hero .eyebrow{background:none;-webkit-text-fill-color:#8fd3b5;color:#8fd3
   <div class="bg" id="heroBg"><img src="hero.jpg" alt="Vista aérea de uma metrópole ao pôr do sol"></div>
   <div class="glow" id="glow"></div>
   <div class="wrap">
-    <span class="eyebrow fade" style="animation-delay:.3s">Fotógrafo · Editor · Estrategista</span>
-    <h1 id="title">Seu perfil como uma <em>vitrine</em> profissional.</h1>
-    <p class="fade" style="animation-delay:1.1s">Eu organizo e posiciono o Instagram de <span class="rotator" id="rot">empresas</span> com estratégia, conteúdo e identidade visual.</p>
+    <span class="eyebrow fade" style="animation-delay:.3s">Sites · Identidade visual · Instagram</span>
+    <h1 id="title">Faça agora mesmo a sua <em>página</em> profissional.</h1>
+    <p class="fade" style="animation-delay:1.1s">Crio sites profissionais para <span class="rotator" id="rot">empresas</span> que querem ser encontrados, passar confiança e vender mais. Pronto para celular, com WhatsApp e a sua identidade.</p>
     <div class="ctas fade" style="animation-delay:1.3s">
-      <a href="https://wa.me/5515992565006?text=Ol%C3%A1%20Moises!%20Quero%20posicionar%20meu%20Instagram." target="_blank" rel="noopener" class="btn btn-accent mag">
+      <a href="https://wa.me/5515992565006?text=Ol%C3%A1%20Moises!%20Quero%20a%20minha%20p%C3%A1gina%20profissional." target="_blank" rel="noopener" class="btn btn-accent mag">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.8-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg>
-        Chamar no WhatsApp
+        Quero meu site
       </a>
-      <a href="#diagnostico" class="btn btn-ghost mag">Fazer diagnóstico grátis</a>
+      <a href="https://ig.me/m/moisesbsilvaa" target="_blank" rel="noopener" class="btn btn-ghost mag">Chame no Direct</a>
     </div>
     <div class="visits fade" id="visits" hidden style="animation-delay:1.5s"><span><b class="vnum">0</b> visitas ao site</span></div>
   </div>
@@ -490,10 +507,39 @@ header.hero .eyebrow{background:none;-webkit-text-fill-color:#8fd3b5;color:#8fd3
 
 <div class="marquee" aria-hidden="true">
   <div class="track" id="track">
-    <span>Fotografia</span><span>Edição</span><span>Vídeos motivacionais</span><span>Estratégia</span><span>Conteúdo</span><span>Identidade visual</span>
-    <span>Fotografia</span><span>Edição</span><span>Vídeos motivacionais</span><span>Estratégia</span><span>Conteúdo</span><span>Identidade visual</span>
+    <span>Sites profissionais</span><span>Landing pages</span><span>Portfólio online</span><span>Mídia kit</span><span>Identidade visual</span><span>Instagram</span>
+    <span>Sites profissionais</span><span>Landing pages</span><span>Portfólio online</span><span>Mídia kit</span><span>Identidade visual</span><span>Instagram</span>
   </div>
 </div>
+
+<section id="site" class="sell">
+  <div class="wrap">
+    <div class="head reveal">
+      <div>
+        <span class="eyebrow">Sua página profissional</span>
+        <h2 style="margin-top:16px">Tudo o que o seu site <em>precisa ter</em>.</h2>
+      </div>
+      <p>Um site feito sob medida, com a cara do seu negócio, pronto para receber clientes. Eu cuido de tudo: do texto ao ar.</p>
+    </div>
+    <div class="feat">
+      <div class="ft reveal"><i>01</i><b>Design exclusivo</b><span>Layout feito para a sua marca, nada de modelo genérico.</span></div>
+      <div class="ft reveal"><i>02</i><b>Perfeito no celular</b><span>A maioria dos clientes chega pelo celular. Seu site abre lindo em qualquer tela.</span></div>
+      <div class="ft reveal"><i>03</i><b>Botão de WhatsApp e Direct</b><span>O cliente fala com você em um toque.</span></div>
+      <div class="ft reveal"><i>04</i><b>Textos que vendem</b><span>Eu escrevo os textos: o que você faz, para quem e por que te escolher.</span></div>
+      <div class="ft reveal"><i>05</i><b>Portfólio e depoimentos</b><span>Seus trabalhos e clientes em destaque para gerar confiança.</span></div>
+      <div class="ft reveal"><i>06</i><b>Link para a bio</b><span>Um endereço profissional para o Instagram, cartão e WhatsApp.</span></div>
+      <div class="ft reveal"><i>07</i><b>Rápido e seguro</b><span>Hospedagem moderna, carregamento rápido e cadeado de segurança.</span></div>
+      <div class="ft reveal"><i>08</i><b>No ar em poucos dias</b><span>Você aprova o visual e eu publico. Simples assim.</span></div>
+    </div>
+    <div class="price reveal">
+      <div><span class="eyebrow">Investimento</span><b>Consulte valores</b><p>Cada projeto é sob medida. Me conte o que você precisa e eu te mando uma proposta.</p></div>
+      <div class="pbtn">
+        <a href="https://wa.me/5515992565006?text=Ol%C3%A1%20Moises!%20Quero%20um%20or%C3%A7amento%20de%20site." target="_blank" rel="noopener" class="btn btn-accent mag">Pedir orçamento no WhatsApp</a>
+        <a href="https://ig.me/m/moisesbsilvaa" target="_blank" rel="noopener" class="btn btn-ghost mag">Chame no Direct</a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="sobre">
   <div class="wrap about">
@@ -565,21 +611,21 @@ header.hero .eyebrow{background:none;-webkit-text-fill-color:#8fd3b5;color:#8fd3
         <span class="eyebrow">Serviços</span>
         <h2 style="margin-top:16px">O que eu faço <em>por você</em>.</h2>
       </div>
-      <p>Três frentes que trabalham juntas para transformar seu perfil em uma vitrine que vende.</p>
+      <p>Do site ao Instagram: tudo para a sua marca ser encontrada, lembrada e escolhida.</p>
     </div>
     <div class="grid">
       <article class="card reveal tilt">
         <span class="n">01</span>
         <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/></svg></div>
-        <h3>Estratégia</h3>
-        <p>Diagnóstico do seu perfil, definição de público, posicionamento e linha editorial.</p>
-        <ul><li>Análise de perfil</li><li>Bio e destaques</li><li>Planejamento de pautas</li></ul>
+        <h3>Site profissional</h3>
+        <p>Sua página profissional, feita sob medida, para apresentar seu trabalho e transformar visitantes em clientes.</p>
+        <ul><li>Site e landing page</li><li>Portfólio online</li><li>Mídia kit digital</li></ul>
       </article>
       <article class="card reveal tilt">
         <span class="n">02</span>
         <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 8a2 2 0 0 1 2-2h2l1.5-2h7L17 6h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><circle cx="12" cy="13" r="4"/></svg></div>
         <h3>Conteúdo</h3>
-        <p>Fotos e vídeos produzidos e editados para comunicar com autoridade e emoção.</p>
+        <p>Fotos e vídeos produzidos e editados para o seu site e as suas redes.</p>
         <ul><li>Ensaios fotográficos</li><li>Edição de Reels</li><li>Vídeos motivacionais</li></ul>
       </article>
       <article class="card reveal tilt">
@@ -711,10 +757,10 @@ header.hero .eyebrow{background:none;-webkit-text-fill-color:#8fd3b5;color:#8fd3
       <h2 style="margin-top:16px">Perguntas <em>frequentes</em>.</h2>
     </div>
     <div class="faq-list reveal">
-      <div class="qa open"><button aria-expanded="true">Preciso já ter muitos seguidores?<span class="pm"></span></button><div class="ans"><div><p>Não. O trabalho começa organizando o que você já tem, para que cada novo visitante entenda rápido o que você faz e por que deve escolher você.</p></div></div></div>
-      <div class="qa"><button aria-expanded="false">Você faz as fotos e os vídeos?<span class="pm"></span></button><div class="ans"><div><p>Sim. Sou fotógrafo e editor, então a produção de fotos, a edição de Reels e os vídeos fazem parte do trabalho, junto com a estratégia.</p></div></div></div>
-      <div class="qa"><button aria-expanded="false">Quanto custa?<span class="pm"></span></button><div class="ans"><div><p>Depende do que o seu perfil precisa. Faça o diagnóstico gratuito: com as suas respostas eu preparo uma proposta sob medida.</p></div></div></div>
-      <div class="qa"><button aria-expanded="false">Como começo?<span class="pm"></span></button><div class="ans"><div><p>Responda o diagnóstico de 2 minutos ou me chame no WhatsApp. A partir daí marcamos uma conversa para entender o seu negócio.</p></div></div></div>
+      <div class="qa open"><button aria-expanded="true">Em quanto tempo meu site fica pronto?<span class="pm"></span></button><div class="ans"><div><p>Em poucos dias. Depois de uma conversa rápida sobre o seu negócio, eu monto o site, você aprova o visual e eu coloco no ar.</p></div></div></div>
+      <div class="qa"><button aria-expanded="false">Preciso entender de tecnologia?<span class="pm"></span></button><div class="ans"><div><p>Não. Eu cuido de tudo: textos, design, publicação e endereço do site. Você só me passa as informações e aprova.</p></div></div></div>
+      <div class="qa"><button aria-expanded="false">Quanto custa?<span class="pm"></span></button><div class="ans"><div><p>Cada projeto é sob medida. Me chame no WhatsApp ou no Direct, conte o que você precisa e eu te envio uma proposta.</p></div></div></div>
+      <div class="qa"><button aria-expanded="false">Você também faz fotos, vídeos e Instagram?<span class="pm"></span></button><div class="ans"><div><p>Sim. Sou fotógrafo e editor, então posso produzir as fotos do seu site e cuidar da identidade visual do seu Instagram também.</p></div></div></div>
     </div>
   </div>
 </section>
@@ -784,7 +830,7 @@ title.innerHTML = title.innerHTML.split(/(<em>.*?<\/em>|\s+)/).filter(t => t && 
 }).join(' ');
 
 /* palavra que alterna */
-const words = ['empresas','clínicas','restaurantes','lojas','profissionais','marcas'];
+const words = ['empresas','clínicas','profissionais','lojas','criadores','marcas'];
 let wi = 0; const rot = $('#rot');
 setInterval(() => {
   wi = (wi + 1) % words.length;
