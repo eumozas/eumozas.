@@ -897,7 +897,7 @@ $('#y').textContent = new Date().getFullYear();
 /* hero rolável */
 (() => {
   const hs = $('#hs'), slides = [...$$('#hs .slide')], bgs = [...$$('.hs-bg')], tabs = [...$$('.hs-tab')];
-  const DUR = 7000; let cur = 0, timer = null, paused = false;
+  const DUR = 5000; let cur = 0, timer = null, paused = false;
   document.documentElement.style.setProperty('--hs-dur', DUR + 'ms');
   const mark = i => {
     cur = i;
