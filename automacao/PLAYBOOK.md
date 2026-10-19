@@ -39,7 +39,7 @@ Além disso, o **Bom dia às 05:00** já está agendado de 14 a 20/10. Em 21 e 2
 
 ## Regras de conteúdo
 
-- **Identidade:** Moises Silva é **fotógrafo, videomaker e estrategista de Instagram** (não é piloto). Site: moisessilva.netlify.app. Diagnóstico: moisessilva.netlify.app/#diagnostico. WhatsApp: (15) 99162-3411.
+- **Identidade:** Moises Silva é **fotógrafo, videomaker e estrategista de Instagram** (não é piloto). Site: moisessilva.netlify.app. Diagnóstico: moisessilva.netlify.app/#diagnostico. WhatsApp: (15) 99256-5006.
 - **Fontes nas artes:** Bebas Neue e Source Sans 3 (já estão no gerador). Não usar outras.
 - **Fotos:** use só as fotos do Moises em `automacao/fotos/` (retrato-pb, notebook-sofa, aviao, pensativo, selfie-mesa, cidade). Varie ao longo do dia. **Não use fotos de terceiros** (jornais, revistas, agências), nem logos de veículos.
 - **Notícias:** tom neutro e factual. Em temas políticos, apresente os dois lados quando houver acusação e resposta, e não tome partido. Sempre cite as fontes na arte (`fontes`) e na legenda. Feche com "O que você acha disso?" e "Comente com respeito 👇".

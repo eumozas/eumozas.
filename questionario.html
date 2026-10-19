@@ -10,18 +10,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#f6f3ee; --surface:#ffffff; --ink:#15130f; --muted:#6a6357; --line:#e2dcd2;
-  --accent:#c9853a; --accent-ink:#fff; --soft:#f3e7d8; --font:"Urbanist",system-ui,sans-serif;
+  --bg:#161617; --surface:#1e1e20; --ink:#ededee; --muted:#9b9ba1; --line:#2d2d31;
+  --accent:#5a8fd0; --accent-ink:#ffffff; --soft:#1d2a3d; --font:"Urbanist",system-ui,sans-serif;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --bg:#100f0d; --surface:#1a1815; --ink:#f2ede4; --muted:#a69e90; --line:#2e2a24;
-    --accent:#e09a4c; --accent-ink:#14110c; --soft:#2a2118;
+    --bg:#161617; --surface:#1e1e20; --ink:#ededee; --muted:#9b9ba1; --line:#2d2d31;
+    --accent:#5a8fd0; --accent-ink:#ffffff; --soft:#1d2a3d;
   }
 }
 :root[data-theme="dark"]{
-  --bg:#100f0d; --surface:#1a1815; --ink:#f2ede4; --muted:#a69e90; --line:#2e2a24;
-  --accent:#e09a4c; --accent-ink:#14110c; --soft:#2a2118;
+  --bg:#161617; --surface:#1e1e20; --ink:#ededee; --muted:#9b9ba1; --line:#2d2d31;
+  --accent:#5a8fd0; --accent-ink:#ffffff; --soft:#1d2a3d;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--ink);font-family:var(--font);font-size:18px;line-height:1.5;min-height:100svh;display:flex;flex-direction:column;-webkit-font-smoothing:antialiased}
@@ -70,6 +70,10 @@ input::placeholder,textarea::placeholder{color:var(--muted);opacity:.6}
 .toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);opacity:0;visibility:hidden;transition:transform .35s,opacity .35s,visibility .35s;background:var(--ink);color:var(--bg);padding:14px 20px;border-radius:12px;font-size:15px;font-weight:500;transition:transform .35s;max-width:calc(100% - 32px);text-align:center;z-index:9}
 .toast.show{transform:translate(-50%,0);opacity:1;visibility:visible}
 .meta{display:flex;gap:18px;flex-wrap:wrap;color:var(--muted);font-size:14px;margin-top:22px}
+
+:root{--grad:linear-gradient(90deg,#64b893,#5a97b0 35%,#5680c3 68%,#6366f1);color-scheme:dark}
+h1 em,.eyebrow{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.primary,.bar i{background:var(--grad);color:#fff}
 </style>
 <script data-goatcounter="https://moisesbsilvaa.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
@@ -87,7 +91,7 @@ input::placeholder,textarea::placeholder{color:var(--muted);opacity:.6}
 
 <script>
 const IG_USER = "moisesbsilvaa";
-const WA_NUMBER = "5515991623411";
+const WA_NUMBER = "5515992565006";
 
 const Q = [
   {id:"nome", t:"text", q:"Qual é o seu nome?", ph:"Seu nome", req:true},
