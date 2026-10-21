@@ -1,0 +1,179 @@
+[
+ {
+  "hora": "08:00",
+  "tipo": "frase",
+  "foto": "cidade.jpg",
+  "eyebrow": "Bora, quarta-feira",
+  "titulo": "O meio da semana é onde o <em>resultado</em> se decide.",
+  "texto": "Segunda empolga, sexta alivia. É na quarta que a constância aparece.",
+  "legenda": "O meio da semana é onde o resultado se decide. ☀️\n\nNa segunda-feira, todo mundo começa animado. Na sexta, o corpo já pede descanso. Mas é na quarta-feira que dá para ver quem continua fazendo o que planejou.\n\nNão precisa de um dia perfeito. Precisa só não abandonar o que você começou. 💪\n\nO que você quer deixar pronto até o fim desta semana? 👇\n\n#bomdia #quartafeira #constancia #motivacao #foco",
+  "alt": "Foto de Moises Silva na cidade, com a frase: O meio da semana é onde o resultado se decide. Segunda empolga, sexta alivia. É na quarta que a constância aparece."
+ },
+ {
+  "hora": "09:00",
+  "tipo": "noticia",
+  "tag": "Tecnologia · 21/10",
+  "destaque": "58 mil",
+  "destaque_label": "Câmeras expostas no Smart Sampa",
+  "titulo": "Vazamento expõe dados de 58 mil câmeras do Smart Sampa por 11 meses; Prefeitura nega falha no sistema",
+  "topicos": [
+   "Segundo o <b>UOL</b>, dados do sistema ficaram em um repositório público e davam acesso a imagens de ruas, <b>escolas, creches e hospitais</b>.",
+   "A <b>Prefeitura de SP</b> diz que um agente autorizado divulgou os dados ilegalmente, que ele foi afastado e que <b>não há falha de segurança</b>.",
+   "O <b>Ministério Público de SP</b> abriu um procedimento preliminar para apurar o caso."
+  ],
+  "categoria": "Tecnologia e privacidade",
+  "fontes": "UOL, via Terra e Gazeta do Povo",
+  "legenda": "Vazamento expõe dados de 58 mil câmeras do Smart Sampa por 11 meses; Prefeitura nega falha no sistema 📹\n\nO Smart Sampa é o programa de monitoramento por câmeras da cidade de São Paulo. Veja o que se sabe até agora:\n\n🔓 Segundo reportagem do UOL, dados sigilosos do sistema ficaram em um repositório público na internet por cerca de 11 meses, com acesso a imagens de mais de 58 mil câmeras em ruas, escolas, creches e hospitais\n🔑 A reportagem cita ainda logins e senhas de usuários e dados de agentes de segurança. A Prefeitura contesta e diz que o repositório não tinha senhas\n🏛️ A Prefeitura confirma o vazamento, mas afirma que não houve falha nos mecanismos de segurança: segundo ela, um agente com acesso autorizado divulgou os dados ilegalmente. Ele foi afastado e é investigado pela Corregedoria da Guarda Civil Metropolitana. O repositório foi retirado do ar e foram adotadas autenticação em dois fatores e validação por SMS\n⚖️ O Ministério Público de São Paulo abriu uma Notícia de Fato para apurar o caso, que pode virar inquérito civil\n\nO caso reacende o debate sobre privacidade e segurança de dados em sistemas de vigilância.\n\nVocê se sente mais seguro ou mais vigiado com câmeras inteligentes nas cidades? O que você acha disso? Comente com respeito 👇\n\nFontes: UOL, via Terra e Gazeta do Povo\n\n#tecnologia #privacidade #segurancadigital #saopaulo #oquevoceachadisso",
+  "alt": "Arte escura com o destaque 58 mil, câmeras expostas no Smart Sampa, e a manchete: Vazamento expõe dados de 58 mil câmeras do Smart Sampa por 11 meses; Prefeitura nega falha no sistema, com três tópicos e as fontes UOL, via Terra e Gazeta do Povo."
+ },
+ {
+  "hora": "10:00",
+  "tipo": "ia",
+  "numero": 8,
+  "titulo": "Peça para a IA <em>comparar</em> orçamentos",
+  "texto": "Cole dois ou três orçamentos e peça uma tabela com preço, prazo, o que está incluso e o que ficou de fora. Você enxerga a diferença em segundos.",
+  "legenda": "IA no dia a dia #08: peça para a IA comparar orçamentos 🤖📋\n\nReforma, festa, fornecedor, plano de internet… Na hora de escolher, os orçamentos chegam cada um num formato diferente e a comparação vira dor de cabeça.\n\nComo fazer:\n\n1️⃣ Copie o texto de dois ou três orçamentos e cole no ChatGPT, no Gemini ou no Claude\n2️⃣ Peça: \"Monte uma tabela comparando preço, prazo, forma de pagamento, o que está incluso e o que ficou de fora\"\n3️⃣ Depois pergunte: \"Que dúvidas eu deveria tirar com cada fornecedor antes de fechar?\"\n\n⚠️ Confira os valores no documento original e apague dados pessoais (CPF, endereço, telefone) antes de colar.\n\nVocê já usou IA para decidir uma compra? 👇\n\nSalve para lembrar 🔖\n\n#inteligenciaartificial #ianodiaadia #chatgpt #produtividade #dicas",
+  "alt": "Arte preta da série IA no dia a dia número 8, com o título Peça para a IA comparar orçamentos e a explicação: cole dois ou três orçamentos e peça uma tabela com preço, prazo, o que está incluso e o que ficou de fora."
+ },
+ {
+  "hora": "11:00",
+  "tipo": "servico",
+  "eyebrow": "Página profissional",
+  "titulo": "Seu negócio precisa de um <em>endereço</em> na internet",
+  "itens": [
+   "Página feita sob medida para o seu trabalho",
+   "Abre rápido e fica bonita no celular",
+   "Seus serviços explicados com clareza",
+   "Botão direto para o seu WhatsApp"
+  ],
+  "cta": "Faça o diagnóstico grátis",
+  "legenda": "Seu negócio precisa de um endereço na internet. 🌐\n\nO Instagram é ótimo para ser descoberto. Mas, quando alguém pesquisa o seu nome no Google ou quer entender melhor o que você faz, uma página profissional passa muito mais confiança.\n\nNa página profissional, eu cuido de:\n\n✅ Layout feito sob medida para o seu trabalho\n✅ Página rápida, que fica bonita no celular\n✅ Seus serviços explicados com clareza\n✅ Botão direto para o seu WhatsApp, para o visitante virar cliente\n\nComece pelo diagnóstico gratuito:\n\n👉 moisessilva.netlify.app/#diagnostico\n📲 WhatsApp (15) 99256-5006\n\nHoje, onde o seu cliente encontra as informações do seu negócio? 👇\n\n#paginaprofissional #site #marketingdigital #empreendedorismo #presencadigital",
+  "alt": "Arte com o título Seu negócio precisa de um endereço na internet, quatro itens do serviço de página profissional e o convite para o diagnóstico grátis no site moisessilva.netlify.app."
+ },
+ {
+  "hora": "12:00",
+  "tipo": "noticia",
+  "tag": "Eleições 2026 · 21/10",
+  "destaque": "4 dias",
+  "destaque_label": "Para o 2º turno",
+  "titulo": "A 4 dias do 2º turno, Lula faz ato em BH e Flávio vai a Guarulhos e Fortaleza",
+  "topicos": [
+   "<b>Flávio (PL)</b>: às 11h, evento com o governador <b>Tarcísio de Freitas</b> em Guarulhos (SP); às 19h, o \"Bloco do 22\" em <b>Fortaleza</b> (CE).",
+   "<b>Lula (PT)</b>: às 16h, ato de campanha em <b>Belo Horizonte</b> (MG); às 19h50, entrevista à <b>TV Record</b>.",
+   "No 1º turno, Flávio teve <b>47,03%</b> dos votos válidos e Lula, <b>45,16%</b>. O 2º turno é no domingo, <b>25/10</b>."
+  ],
+  "categoria": "Política",
+  "fontes": "Metrópoles",
+  "legenda": "A 4 dias do 2º turno, Lula faz ato em BH e Flávio vai a Guarulhos e Fortaleza 🗳️\n\nSegundo o Metrópoles, estas são as agendas divulgadas pelas campanhas para esta quarta-feira (21):\n\n🔵 Flávio Bolsonaro (PL): às 11h, evento com o governador de São Paulo, Tarcísio de Freitas, em Guarulhos (SP). Às 19h, o \"Bloco do 22\", em Fortaleza (CE), perto da Arena Castelão\n\n🔴 Lula (PT): às 16h, ato de campanha em Belo Horizonte (MG). Às 19h50, entrevista à TV Record\n\n📊 No 1º turno, Flávio teve 47,03% dos votos válidos e Lula, 45,16%\n\n📅 O 2º turno é no domingo, 25 de outubro. Antes disso, está previsto o último debate, na TV Globo, na sexta (23)\n\nAs agendas podem mudar ao longo do dia.\n\nVocê vai acompanhar a entrevista e o debate desta reta final? O que você acha disso? Comente com respeito 👇\n\nFonte: Metrópoles\n\n#eleicoes2026 #segundoturno #politica #agenda #oquevoceachadisso",
+  "alt": "Arte escura com o destaque 4 dias, para o 2º turno, e a manchete: A 4 dias do 2º turno, Lula faz ato em BH e Flávio vai a Guarulhos e Fortaleza, com as agendas dos dois candidatos, o resultado do 1º turno e a fonte Metrópoles."
+ },
+ {
+  "hora": "13:00",
+  "tipo": "frase",
+  "foto": "aviao.jpg",
+  "eyebrow": "Bastidores",
+  "titulo": "Trabalho fora começa na <em>mala</em>.",
+  "texto": "Baterias carregadas, cartões formatados e checklist conferido antes de sair de casa.",
+  "legenda": "Trabalho fora começa na mala. 🧳\n\nQuando o trabalho é em outra cidade, não dá para voltar em casa para buscar o que ficou para trás. Por isso, a gravação começa um dia antes, com a mala.\n\n🔋 Todas as baterias carregadas, com reserva\n💾 Cartões de memória vazios e formatados\n🎙️ Microfones, cabos e adaptadores testados\n✅ Um checklist conferido item por item antes de sair\n\nO cliente só vê o resultado. Mas é essa preparação que garante que nada falhe no dia. 🎬\n\nVocê também é do time do checklist? 👇\n\n#bastidores #videomaker #fotografo #viagemdetrabalho #organizacao",
+  "alt": "Foto de Moises Silva em viagem, com a frase: Trabalho fora começa na mala. Baterias carregadas, cartões formatados e checklist conferido antes de sair de casa."
+ },
+ {
+  "hora": "14:00",
+  "tipo": "servico",
+  "eyebrow": "Dica de Instagram",
+  "titulo": "Escolha a <em>capa</em> de cada Reels",
+  "itens": [
+   "Use um frame com rosto ou produto em destaque",
+   "Escreva o tema em poucas palavras",
+   "Deixe o texto no centro da imagem",
+   "Siga um padrão de cores no perfil"
+  ],
+  "cta": "Quer ajuda? Diagnóstico grátis",
+  "legenda": "Escolha a capa de cada Reels. 🎞️\n\nQuando alguém visita o seu perfil, as capas dos Reels são a primeira coisa que aparece na grade. Capa aleatória, com o rosto cortado ou um frame borrado, passa a impressão de perfil desorganizado.\n\n1️⃣ Escolha um frame com rosto ou produto em destaque, nítido e bem iluminado\n2️⃣ Escreva o tema do vídeo em poucas palavras, para a pessoa saber do que se trata\n3️⃣ Deixe o texto no centro da imagem, porque a grade do perfil corta as bordas\n4️⃣ Siga um padrão de cores e fontes, para o perfil ficar com cara de marca\n\nDica extra: antes de publicar, confira como a capa aparece na grade do perfil. ✅\n\nQuer que eu analise o seu perfil? Faça o diagnóstico gratuito:\n👉 moisessilva.netlify.app/#diagnostico\n📲 WhatsApp (15) 99256-5006\n\nVocê costuma escolher a capa dos seus Reels? 👇\n\n#dicasdeinstagram #reels #capadereels #instagramparaempresas #socialmedia",
+  "alt": "Arte com a dica de Instagram Escolha a capa de cada Reels, com quatro dicas para criar capas e o convite para o diagnóstico grátis."
+ },
+ {
+  "hora": "15:00",
+  "tipo": "noticia",
+  "tag": "Economia · 21/10",
+  "destaque": "+1,57%",
+  "destaque_label": "Alta do Ibovespa na terça",
+  "titulo": "Ibovespa sobe 1,57% e passa dos 208 mil pontos; dólar cai a R$ 5,01",
+  "topicos": [
+   "O <b>Ibovespa</b> fechou a terça (20) aos <b>208.296 pontos</b>. O dólar comercial caiu <b>0,58%</b>, a <b>R$ 5,019</b>.",
+   "O mercado reagiu à <b>queda dos juros futuros</b>, com as <b>pesquisas do 2º turno</b> no radar, e à alta do petróleo.",
+   "<b>Bradesco (+3,18%)</b> e <b>Itaú (+2,36%)</b> lideraram entre as maiores ações; <b>Vale</b> caiu <b>1,31%</b>."
+  ],
+  "categoria": "Economia",
+  "fontes": "Diário do Grande ABC, BPMoney",
+  "legenda": "Ibovespa sobe 1,57% e passa dos 208 mil pontos; dólar cai a R$ 5,01 📈\n\nSegundo o Diário do Grande ABC, o principal índice da Bolsa brasileira fechou a terça-feira (20) em alta de 1,57%, aos 208.296 pontos. O dólar comercial caiu 0,58%, cotado a R$ 5,019 na venda.\n\n📉 Segundo o BPMoney, os juros futuros caíram, com o mercado acompanhando as pesquisas do 2º turno\n🛢️ O petróleo Brent chegou a US$ 111 por barril, o maior nível em cinco meses, após novos ataques no Oriente Médio, o que ajudou as ações de petroleiras\n🏦 Entre as maiores ações, Bradesco subiu 3,18% e Itaú, 2,36%. Petrobras PN avançou 0,43%\n⛏️ Na contramão, a Vale caiu 1,31%\n📆 No ano, o Ibovespa acumula alta de 29,28%\n\nDólar mais baixo pode aliviar o preço de produtos importados, como câmeras, celulares e computadores.\n\nVocê acompanha o sobe e desce do mercado nesta reta final da eleição? O que você acha disso? Comente com respeito 👇\n\nFontes: Diário do Grande ABC e BPMoney\n\n#economia #ibovespa #dolar #mercadofinanceiro #oquevoceachadisso",
+  "alt": "Arte escura com o destaque +1,57%, alta do Ibovespa na terça, e a manchete: Ibovespa sobe 1,57% e passa dos 208 mil pontos; dólar cai a R$ 5,01, com três tópicos e as fontes Diário do Grande ABC e BPMoney."
+ },
+ {
+  "hora": "16:00",
+  "tipo": "frase",
+  "foto": "pensativo.jpg",
+  "eyebrow": "Pensa nisso",
+  "titulo": "Não espere a ideia perfeita. <em>Melhore</em> a que você tem.",
+  "texto": "Toda boa ideia já foi uma versão simples que alguém teve coragem de testar.",
+  "legenda": "Não espere a ideia perfeita. Melhore a que você tem. 💡\n\nA ideia perfeita quase nunca aparece pronta. O que existe é uma ideia simples, que vai sendo ajustada a cada tentativa, a cada feedback e a cada erro.\n\nQuem fica esperando a ideia genial perde o tempo que poderia estar usando para melhorar a ideia que já tem. 🚀\n\nQual ideia você está guardando há tempo demais? 👇\n\n#ideias #atitude #execucao #empreendedorismo #reflexao",
+  "alt": "Foto de Moises Silva pensativo, com a frase: Não espere a ideia perfeita. Melhore a que você tem. Toda boa ideia já foi uma versão simples que alguém teve coragem de testar."
+ },
+ {
+  "hora": "17:00",
+  "tipo": "servico",
+  "eyebrow": "Antes de contratar",
+  "titulo": "4 perguntas antes de fechar com um <em>fotógrafo</em>",
+  "itens": [
+   "Posso ver trabalhos reais e recentes?",
+   "Qual o prazo de entrega das fotos?",
+   "O que está incluso no valor?",
+   "Como posso usar as imagens?"
+  ],
+  "cta": "Veja o portfólio no site",
+  "legenda": "4 perguntas para fazer antes de fechar com um fotógrafo ou videomaker. 📸\n\nContratar sem tirar essas dúvidas é o caminho mais curto para frustração dos dois lados. Antes de fechar, pergunte:\n\n1️⃣ Posso ver trabalhos reais e recentes, parecidos com o que eu preciso?\n2️⃣ Qual o prazo de entrega das fotos ou do vídeo?\n3️⃣ O que está incluso no valor: quantas fotos, edição, deslocamento?\n4️⃣ Como posso usar as imagens: só nas redes ou também em anúncios e materiais impressos?\n\nAqui eu respondo tudo isso antes de qualquer contrato. 🤝 Veja trabalhos reais no portfólio e, se quiser, comece pelo diagnóstico gratuito:\n\n👉 moisessilva.netlify.app\n👉 moisessilva.netlify.app/#diagnostico\n📲 WhatsApp (15) 99256-5006\n\nQual dessas perguntas você já esqueceu de fazer? 👇\n\n#fotografo #videomaker #portfolio #fotografiaprofissional #dicas",
+  "alt": "Arte com o título 4 perguntas antes de fechar com um fotógrafo, a lista das perguntas e o convite para ver o portfólio no site moisessilva.netlify.app."
+ },
+ {
+  "hora": "18:00",
+  "tipo": "noticia",
+  "tag": "Economia criativa · 21/10",
+  "destaque": "90%",
+  "destaque_label": "Da assinatura vai para o criador",
+  "titulo": "Spotify lança assinaturas para fãs apoiarem podcasts; Brasil fica de fora por enquanto",
+  "topicos": [
+   "O <b>Memberships</b> permite cobrar por episódios extras, acesso antecipado e <b>menos anúncios</b>. O criador define preços e benefícios.",
+   "O Spotify repassa <b>90%</b> da receita ao podcaster. Estreia em <b>34 mercados</b>, sem o Brasil.",
+   "Requisitos: <b>3 episódios</b>, <b>100 ouvintes</b> e <b>100 horas</b> de consumo nos últimos 30 dias."
+  ],
+  "categoria": "Lançamentos digitais",
+  "fontes": "Canaltech",
+  "legenda": "Spotify lança assinaturas para fãs apoiarem podcasts; Brasil fica de fora por enquanto 🎙️\n\nSegundo o Canaltech, o Spotify lançou nesta terça-feira (20) o Memberships, uma assinatura paga que os criadores de podcast podem oferecer aos seus ouvintes, em um modelo parecido com o clube de membros do YouTube.\n\n🎧 Os assinantes podem ter episódios extras em áudio e vídeo, acesso antecipado, episódios antigos do catálogo e menos anúncios\n💰 O criador define os próprios planos, preços e benefícios, e o Spotify repassa 90% da receita ao podcaster\n🌎 O recurso estreia em 34 mercados. O Brasil não está nesta primeira fase\n📋 Para participar, o programa precisa estar no Spotify for Creators ou no Megaphone, ter pelo menos 3 episódios publicados e somar 100 ouvintes e 100 horas de consumo no Spotify nos últimos 30 dias\n\nÉ mais uma forma de criadores ganharem dinheiro direto com a própria audiência, sem depender só de anúncios.\n\nVocê pagaria para apoiar um podcast que gosta? O que você acha disso? Comente com respeito 👇\n\nFonte: Canaltech\n\n#spotify #podcast #economiacriativa #criadoresdeconteudo #oquevoceachadisso",
+  "alt": "Arte escura com o destaque 90%, da assinatura vai para o criador, e a manchete: Spotify lança assinaturas para fãs apoiarem podcasts; Brasil fica de fora por enquanto, com três tópicos e a fonte Canaltech."
+ },
+ {
+  "hora": "19:00",
+  "tipo": "noticia",
+  "tag": "Eleições 2026 · 21/10",
+  "destaque": "Promessas",
+  "destaque_label": "Na reta final da campanha",
+  "titulo": "Reta final: Flávio promete a volta do Perse e Lula propõe tarifa zero nos fins de semana",
+  "topicos": [
+   "<b>Flávio (PL)</b> promete recriar o <b>Perse</b>, programa de apoio ao setor de eventos encerrado em 2025, e devolver parte do que é pago via Pix.",
+   "<b>Lula (PT)</b> anunciou uma <b>PEC</b> para ônibus gratuito nos fins de semana, com custo estimado em <b>R$ 10 bilhões</b>, bancado por emendas parlamentares.",
+   "Analistas ouvidos pela CNN criticam as duas propostas pelo <b>custo</b> e pela <b>viabilidade</b>."
+  ],
+  "categoria": "Política",
+  "fontes": "CNN Brasil",
+  "legenda": "Reta final: Flávio promete a volta do Perse e Lula propõe tarifa zero nos fins de semana 🗳️\n\nA poucos dias do 2º turno, os dois candidatos apresentaram novas promessas. Veja os dois lados, sem tomar partido:\n\n🔵 Segundo a CNN Brasil, Flávio Bolsonaro (PL) promete recriar o Perse, programa criado na pandemia para socorrer o setor de eventos, hotéis, bares e restaurantes, encerrado em 2025. Ele diz que a medida ajuda shows, comércio e motoristas de aplicativo. Também propôs devolver parte do dinheiro pago via Pix, sem detalhar regras e impacto fiscal\n\n🔴 Lula (PT) anunciou uma PEC para tornar o transporte público por ônibus gratuito nos fins de semana. O governo estima custo de cerca de R$ 10 bilhões, que seria coberto com 25% das emendas parlamentares obrigatórias\n\n⚖️ Analistas ouvidos pela CNN criticaram as duas propostas. Sobre o Perse, citaram o alto custo e as irregularidades apontadas pela Receita. Sobre a tarifa zero, disseram que a chance de o Congresso abrir mão das emendas é baixa\n\nO 2º turno é no domingo, 25 de outubro.\n\nQual proposta mais impactaria a sua vida? O que você acha disso? Comente com respeito 👇\n\nFonte: CNN Brasil\n\n#eleicoes2026 #segundoturno #propostas #politica #oquevoceachadisso",
+  "alt": "Arte escura com o destaque Promessas, na reta final da campanha, e a manchete: Reta final: Flávio promete a volta do Perse e Lula propõe tarifa zero nos fins de semana, com as propostas dos dois candidatos, as críticas de analistas e a fonte CNN Brasil."
+ },
+ {
+  "hora": "20:00",
+  "tipo": "boanoite",
+  "titulo": "Desligue a tela. O <em>amanhã</em> agradece.",
+  "texto": "Um pouco de silêncio antes de dormir organiza a cabeça melhor do que mais um vídeo.",
+  "legenda": "Boa noite! 🌙\n\nDepois de um dia cheio de notícias, mensagens e notificações, a cabeça também precisa desligar.\n\nTente deixar o celular de lado alguns minutos antes de dormir. Um pouco de silêncio organiza os pensamentos melhor do que mais um vídeo. ✨\n\nVocê consegue largar o celular antes de dormir? 👇\n\n#boanoite #quartafeira #descanso #reflexao #equilibrio",
+  "alt": "Arte noturna com lua e estrelas, o título Boa noite e a frase: Desligue a tela. O amanhã agradece. Um pouco de silêncio antes de dormir organiza a cabeça melhor do que mais um vídeo."
+ }
+]
