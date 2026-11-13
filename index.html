@@ -603,6 +603,15 @@ header.hero .eyebrow{background:none;-webkit-text-fill-color:#8fd3b5;color:#8fd3
 .pk:not(.pk-feat) .pk-tag{background:var(--bg);border:1px solid var(--line);color:var(--muted)}
 .pk-note{text-align:center;margin-top:30px;color:var(--muted)}.pk-note a{color:var(--ink);font-weight:700}
 @media (max-width:900px){.pkgrid{grid-template-columns:1fr;max-width:460px;margin-inline:auto}.pk-feat{transform:none;order:-1}}
+
+/* diagnóstico como pop-up */
+.dg{background:rgba(8,8,10,.72);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);overflow:hidden;display:flex;align-items:center;justify-content:center;padding:20px}
+.dg-card{position:relative;width:min(760px,100%);max-height:min(88vh,860px);overflow-y:auto;background:var(--bg);border:1px solid var(--line);border-radius:28px;box-shadow:0 40px 120px -20px rgba(0,0,0,.8),0 0 0 1px rgba(99,102,241,.15)}
+.dg-card::before{content:"";position:sticky;top:0;display:block;height:4px;background:var(--grad);z-index:3}
+.dg-top{border-radius:28px 28px 0 0}
+.dg-head{width:100%;padding:16px 22px}
+.dg-bar{width:calc(100% - 44px)}
+@media (max-width:600px){.dg{padding:10px}.dg-card{max-height:94vh;border-radius:22px}}
 </style>
 <script data-goatcounter="https://moisesbsilvaa.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
@@ -1093,6 +1102,7 @@ header.hero .eyebrow{background:none;-webkit-text-fill-color:#8fd3b5;color:#8fd3
   <div class="mstage"><div class="mframe" id="mframe"><iframe id="miframe" title="Prévia do site" src="about:blank"></iframe></div></div>
 </div>
 <div class="dg" id="dg" role="dialog" aria-modal="true" aria-label="Diagnóstico gratuito">
+ <div class="dg-card">
   <div class="dg-top">
     <div class="dg-head">
       <div class="dg-brand"><img src="moises.jpg" alt=""><span><b>Moises Silva</b><small>Diagnóstico de redes sociais</small></span></div>
@@ -1101,6 +1111,7 @@ header.hero .eyebrow{background:none;-webkit-text-fill-color:#8fd3b5;color:#8fd3
     <div class="dg-bar"><i id="dgBar"></i></div>
   </div>
   <div class="dg-main" id="dgApp"></div>
+ </div>
 </div>
 <div class="pop" id="pop" role="dialog" aria-modal="true" aria-labelledby="popT">
   <div class="pop-box">
@@ -1480,6 +1491,25 @@ if (location.hash === '#diagnostico') open();
 /* aparecer ao rolar */
 const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12});
 $$('.reveal').forEach(el => { const sib = [...el.parentElement.children].filter(x => x.classList.contains('reveal')); el.style.transitionDelay = (sib.indexOf(el) * 110) + 'ms'; io.observe(el); });
+})();
+
+/* diagnóstico abre sozinho como pop-up: 1 vez por visita, após 25s ou ao rolar 70% */
+(() => {
+  const dg = document.getElementById('dg'); if (!dg) return;
+  dg.addEventListener('click', e => { if (e.target === dg) document.getElementById('dgClose').click(); });
+  let seen = false; try { seen = sessionStorage.getItem('dgVisto') === '1'; } catch(e) {}
+  if (seen || location.hash === '#diagnostico') return;
+  const busy = () => ['pop','modal'].some(id => { const el = document.getElementById(id); return el && el.classList.contains('open'); }) || dg.classList.contains('open');
+  const fire = () => {
+    if (seen) return;
+    if (busy()) { setTimeout(fire, 6000); return; }
+    seen = true; try { sessionStorage.setItem('dgVisto','1'); } catch(e) {}
+    removeEventListener('scroll', onSc);
+    const a = document.createElement('a'); a.href = '#diagnostico'; a.style.display = 'none'; document.body.appendChild(a); a.click(); a.remove();
+  };
+  const onSc = () => { const h = document.documentElement.scrollHeight - innerHeight; if (h > 0 && scrollY / h > .7) fire(); };
+  setTimeout(fire, 25000);
+  addEventListener('scroll', onSc, {passive:true});
 })();
 </script>
 </body>
